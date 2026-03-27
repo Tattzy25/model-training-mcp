@@ -1,0 +1,57 @@
+<!-- mcp-app.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>model training MCP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="app-root">
+      <!-- You can paste your existing styled UI here; this is minimalist for clarity -->
+      <h1>model training MCP</h1>
+
+      <section>
+        <h2>Upload Zip</h2>
+        <input type="file" id="upload-file" accept=".zip" />
+        <button id="upload-btn">Upload</button>
+        <div id="upload-status"></div>
+      </section>
+
+      <section>
+        <h2>Download Zip</h2>
+        <input
+          type="text"
+          id="download-key"
+          placeholder="Path in bucket (e.g. my-folder.zip)"
+        />
+        <button id="download-btn">Download</button>
+        <div id="download-status"></div>
+      </section>
+
+      <section>
+        <h2>Delete Zip</h2>
+        <input
+          type="text"
+          id="delete-key"
+          placeholder="Path in bucket (e.g. my-folder.zip)"
+        />
+        <button id="delete-btn">Delete</button>
+        <div id="delete-status"></div>
+      </section>
+
+      <section>
+        <h2>Archive Zip</h2>
+        <input
+          type="text"
+          id="archive-key"
+          placeholder="Path in bucket (e.g. my-folder.zip)"
+        />
+        <button id="archive-btn">Archive</button>
+        <div id="archive-status"></div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/mcp-app.ts"></script>
+  </body>
+</html>
